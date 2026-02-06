@@ -13,3 +13,4 @@ The srand() command stores the seed and uses it to generate a random number. The
 8⃣. In the eighth line, a random number is written in the random variable by executing the rand() command.
 
 ✔ Output: at the end of the program execution, we get a random number in the random variable. The program fits into just 9 lines.
+<img width="273" height="119" alt="image" src="https://github.com/user-attachments/assets/159c7908-4fa6-4903-83ff-7a68fb010ebb" />
