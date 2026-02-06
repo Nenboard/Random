@@ -1,16 +1,15 @@
-✔ Так как я не нашел в интернете как генерировать случайные числа на языке C, я пришел к выводу что сам напишу программу-рандомайзер! 
-Этот репозиторий будет полезен новичкам, которые только начинают свой путь в программировании. 
-Суть программы: создается любая переменная, затем мы берем адрес в памяти этой переменной. 
-Таким образом мы получаем сид для генерации случайного числа. 
-Затем используя заголовочный файл "stdlib.h", который добавляет такие команды как srand() и rand(), нужные для генерации случайного числа, записываем сид и генерируем случайное число в переменную random. 
-Команда srand() запоминает сид, на основе которого генерирует случайное число. Команда rand() же уже генерирует само случайное число. 
+This repository will be useful for beginners who are just starting their journey in programming. 
+The essence of the program is that any variable is created, and then we take the address of that variable in memory. 
+This way, we get a seed for generating a random number. 
+Then, using the "stdlib.h" header file, which adds commands such as srand() and rand() for generating a random number, we write the seed and generate a random number in the random variable. 
+The srand() command stores the seed and uses it to generate a random number. The rand() command already generates a random number. 
 
-➡ Объяснение:
-1⃣. В первой строчке кода подключается заголовочный файл "stdlib.h", который добавляет команды srand() и rand().
-3⃣. В третьей строчке точка входа main().
-5⃣. В пятой строчке входа создается переменная, причем 8 битном целочисленном формате, и сразу заполняется пустым массивом, чтобы не было предупреждений C4311 и C4302. Как я понял это связано с тем, что адрес 8 битной переменной меньшей длины, чем адрес 32 битной.
-6⃣. В шестой строчке генерируется сид: берется адрес в памяти переменной var. Затем оно конвертируется в 32 битное стандартное целочисленное число, для записи в переменной этого же типа.
-7⃣. В седьмой строчке записывается сид, сгенерированный в шестой строчке, путем выполнения команды srand().
-8⃣. В восьмой строчке в переменную random записывается случайное число, путем выполнения команды rand().
+➡ Explanation:
+1⃣. In the first line of code, the header file "stdlib.h" is included, which adds the srand() and rand() commands.
+3⃣. In the third line, the main() entry point is defined.
+5⃣. In the fifth line, a variable is created in an 8-bit integer format and immediately filled with an empty array to avoid warnings such as C4311 and C4302. As I understand it, this is because the address of an 8-bit variable is smaller than the
+6⃣. In the sixth line, a seed is generated: the address in the memory of the var variable is taken. Then it is converted to a 32-bit standard integer number, which is written in a variable of the same type.
+7⃣. In the seventh line, the seed generated in the sixth line is written by executing the srand() command.
+8⃣. In the eighth line, a random number is written in the random variable by executing the rand() command.
 
-✔ Вывод: на выходе в конце выполнения программы мы получаем случайное число в переменной random. Программа уместилась всего в 9 строк.
+✔ Output: at the end of the program execution, we get a random number in the random variable. The program fits into just 9 lines.
